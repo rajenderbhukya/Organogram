@@ -124,6 +124,23 @@
          height: 23px
       }
 
+      nav {
+         display: flex;
+         gap: 10px;
+         flex-wrap: wrap
+      }
+
+      nav a.nav-transfer {
+         background: #fff;
+         color: var(--brand, #0072BC);
+         border-color: #fff
+      }
+
+      nav a.nav-transfer:hover,
+      nav a.nav-transfer:focus-visible {
+         background: var(--brand-l, #e6f2fa)
+      }
+
       nav a {
          display: inline-flex;
          align-items: center;
@@ -1604,7 +1621,12 @@
          <nav><a href="#" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" />
                   <circle cx="12" cy="10" r="2.5" />
-               </svg>Sales &amp; Source HQ mapping</a></nav>
+               </svg>Sales &amp; Source HQ mapping</a><a class="nav-transfer" href="https://rajenderbhukya.github.io/employeetransfer/"
+               target="_blank" rel="noopener noreferrer" title="Open Employee Transfer in a new tab"><svg viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 7h13M16 3l4 4-4 4" />
+                  <path d="M17 17H4M8 13l-4 4 4 4" />
+               </svg>Employee Transfer / Swap</a></nav>
       </div>
    </header>
    <main>
