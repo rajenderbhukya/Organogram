@@ -1875,7 +1875,7 @@
          $('#hisBtn').hidden = !(shist[cur] || []).length;
          $('#mapT').textContent = ed ? 'Editing mapping' : 'Existing mapping';
          $('#mapRange').textContent = s ? `Effective ${fd(s.from)} → Present` : '';
-         $('#mapNote').textContent = v ? 'Fields are locked. Click Edit to modify Sales HQ or Source HQ. A reason is mandatory.'
+         $('#mapNote').textContent = v ? 'Fields are locked. Click Edit to change Sales HQ or Source HQ – a reason is required.' : ed ? 'For any Sales HQ or Source HQ change, provide the effective date and reason in the respective section.' : '';
          $('#lblFrom').innerHTML = ed ? 'New effective from <span style="font-weight:400;color:var(--mute)">(if Sales HQ changes)</span>' : 'Effective from <i>*</i>';
          $('#lblReason').innerHTML = ed ? 'Reason for edit <span style="font-weight:400;color:var(--mute)">(if Sales HQ changes)</span>' : 'Change reason / remarks <i>*</i>';
          $('#reason').placeholder = ed ? 'Why is the Sales HQ mapping changing?' : 'Enter reason for initial mapping or change';
